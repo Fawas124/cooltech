@@ -1,0 +1,56 @@
+/* Reset default margin, padding, and box model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+/* Adjust the height of banner images */
+.banner img {
+  height: 15rem;
+}
+/* Margin adjustment for a specific section */
+body > section:nth-child(2) > div > div:nth-child(1) {
+    margin-top: 5rem;
+}
+/* Style for the 'details' section header */
+.details h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10rem;
+  font-size: 4rem;
+  font-weight: 800;
+}
+/* Styling for iframes */
+iframe {
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for submit buttons */
+.submit {
+  background: rgb(4, 4, 66);
+  border: none;
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: white;
+}
+/* Margin and alignment adjustments for specific elements in a section */
+body > section:nth-child(3) > div > div > h5 {
+    margin-top: 8rem;
+}
+/* Margin and alignment adjustments for specific elements in a section */
+body > section:nth-child(3) > div > div > img {
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+/* Media query for responsive design */
+@media only screen and (max-width: 766px) {
+    iframe {
+        margin-top: 2rem;
+        width: 50%;
+        height: 60%;
+    }
+}

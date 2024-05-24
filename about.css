@@ -1,0 +1,112 @@
+/* Reset default margin, padding, and box model for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styles for the banner image */
+.banner img{
+    height: 15rem;
+}
+/* Styles for the 'about' section */
+#about {
+    margin-top: 8rem;
+    background: white;
+}
+/* Text styles within the 'about' section */
+.text {
+    color: black;
+    font-weight: 300;
+}
+/* Button styles */
+.btn {
+    background: rgb(4, 4, 66);
+    color: white;
+    margin-left: 1rem;
+}
+/* Button link styles */
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+/* Hover effect for the button */
+.btn:hover {
+    color: dodgerblue;
+}
+/* Styles for the 'details' section */
+.details h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10rem;
+  font-size: 4rem;
+  font-weight: 800;
+}
+/* Styles for text within the '#brand' section */
+#brand .row .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+}
+/* Styles for the 'create' container */
+.container .create{
+    padding-left: 5rem;
+}
+/* Styles for the 'create' paragraph */
+.create p {
+    border: 2px solid dodgerblue;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+/* Styles for the 'bnt' button */
+
+.bnt {
+    margin-top: -10rem;
+    background: rgb(4, 4, 66);
+    margin-left: 1rem;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+/* Styles for the 'bnt' button link */
+.bnt a {
+    text-decoration: none;
+    color: white;
+}
+/* Media query for responsive design */
+@media only screen and (max-width: 960px) {
+  .details h1 {
+    color: white;
+    margin-top: -10rem;
+    font-size: 3rem;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .banner {
+        margin-top: -2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .banner{
+        margin-top: -5rem;
+    }
+    .details h1 {
+    color: white;
+    margin-top: -7rem;
+    font-weight: 500;
+    }
+    #brand > div > div.create.col-lg-6.col-md-6.w-50.col-12.my-5.pt-5.pb-5 > p:nth-child(n) {
+        margin-right: 4rem;
+    }
+    .indented-checkbox-text {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+}

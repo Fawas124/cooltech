@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: whitesmoke;
+  height: 100vh;
+}
+.navbar {
+  background: white;
+}
+.mage {
+  width: 4.6rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  border-radius: 50px;
+}
+.navbar-nav {
+  padding-left: 20rem;
+}
+#navbarNav > ul > li:nth-child(n) > a {
+  color: navy;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.body {
+  padding-top: 20%;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    background: whitesmoke;
+    padding: 0 0.8rem;
+  }
+}
+@media only screen and (max-width: 468px) {
+    .mage {
+        width: 4rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        border-radius: 50px;
+      }
+}

@@ -1,0 +1,42 @@
+/* Reset default margin, padding, and box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Adjust the height of banner images */
+.banner img{
+    height: 15rem;
+}
+/* Center-align container and add margin */
+.container.text-center {
+    margin-top: 8rem;
+}
+/* Style for the 'details' section header */
+.details h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10rem;
+    font-size: 4rem;
+    font-weight: 800;
+}
+/* Style for the 'Explore More' button */
+.explore {
+    margin-top: -10rem;
+    background: rgb(4, 4, 66);
+    margin-left: 1rem;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+/* Media query for responsive design */
+@media only screen and (max-width: 468px) {
+    .cart {
+        margin-right: 2rem;
+        list-style-type: none;
+    }
+}

@@ -1,0 +1,194 @@
+:root {
+    /* ======= Header ======= */
+     --header-height: 3.5rem;
+
+    --hue: 200;
+    --first-color: hsl(var(--hue), 100%, 40%);
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
+    --title-color: hsl(210, 19%, 6%);
+    --text-color: hsl(228, 8%, 65%);
+    --body-color: hsl(228, 15%, 20%);
+    --button-color: rgb(6, 2, 68);
+    --button-text: rgb(255, 255, 255);
+    /* --body-color: #e40c0c; */
+    --container-color: rgb(85, 75, 224);
+
+    /* ======= Font & Typography ======= */
+    /*  .5rem = 8px, 1rem = 16px  */
+    --body-font: "Poppins", sans-serif;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* ======= Font & Weight ======= */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /* ======= Z Index ======= */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+/* ======= Base ======= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(187, 180, 180);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+input, textarea, button, body {
+    font-family: var(--body-color);
+    color: var(--text-color);
+}
+input:focus{
+    background: rgb(163, 157, 252);
+    color: var(--button-text);
+}
+
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+/* ======= Reuseable CSS Classes ======= */
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: rgb(4, 4, 46);
+    color: #f1f1f1;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: var(--first-color);
+}
+hr{
+    /* height: px; */
+    background: var(--button-color);
+}
+
+/* ======= HOME ======= */
+.navbar {
+    background: white;
+}
+
+.active:hover{
+    background-color: var(--button-color);
+}
+.mage {
+    width: 4.6rem;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    border-radius: 50px;
+}
+
+.navbar-nav {
+    padding-left: 20rem;
+}
+
+#navbarNav>ul>li:nth-child(n)>a {
+    color: navy;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        background: whitesmoke;
+        padding: 0 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .mage {
+        width: 4rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        border-radius: 50px;
+    }
+}
+
+/* ======= HOME ======= */
+.product_backg{
+    width: 98%;
+    height: 70vh;
+    background: url("imges/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.explore{
+    width: 160px;
+    padding: 10px 30px;
+    color: var(--button-text);
+    background-color: var(--button-color);
+    border-radius: 20px;
+}
+.product-subdiv{
+    justify-content: space-between;
+}
+.card-infor{
+    height: 425px;
+}
+/* .card2{
+    background-color: rgb(6, 2, 68);
+} */
+/* ======= ABOUT ======= */
+
+/* ======= PROJECTS ======= */
+
+/* ======= CONTACT ======= */
+
+/* ======= SERVICES ======= */
+
+/* ======= FOOTER ======= */
+.footer-div{
+    width: 100%;
+    /* height: 65vh; */
+    background-color: var(--button-color);
+}
+
+          /* Add blur to header */
+.blur-header{
+    background-color: transparent;
+}
+.blur-header::after{
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: var(--container-color);
+    backdrop-filter: blur(42px);
+    -webkit-backdrop-filter: blur(42px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
